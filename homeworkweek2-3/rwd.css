@@ -1,0 +1,43 @@
+@media all and (min-width: 992px) {
+    #main-section{
+        flex-basis:60%;
+    }
+    #aside-left,
+    #aside-right{
+        flex-basis:20%;
+    }    
+    #aside-left{
+        order:-1; 
+    }
+} 
+
+
+
+@media all and (max-width: 992px) {
+    #main-section{
+        flex-basis:80%;
+    }
+    
+    #aside-right{
+        flex-basis:20%;
+    }    
+    #aside-left{
+        order:1;
+        flex-basis:100%; 
+    }
+    
+} 
+
+
+@media all and (max-width: 768px) {
+    #main-section,
+    #aside-left,
+    #aside-right
+    {
+        flex-basis: 100%;
+    }   
+    #aside-left{
+        order:0;
+    }
+}
+
